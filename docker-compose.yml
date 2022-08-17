@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  bot:
+    build: ./bot
+    container_name: bot
+    ports:
+      - "8079:8079"
+    stdin_open: true
+    tty: true
+  api:
+    build: ./api
+    container_name: api
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
