@@ -2,6 +2,7 @@ version: "3.9"
 services:
   bot:
     build: ./bot
+    image: sirh/c2s:semblance
     container_name: bot
     ports:
       - "8079:8079"
@@ -9,6 +10,7 @@ services:
     tty: true
   api:
     build: ./api
+    image: sirh/c2s:api
     container_name: api
     ports:
       - "3000:3000"
