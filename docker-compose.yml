@@ -4,6 +4,7 @@ services:
     build: ./bot
     image: sirh/c2s:semblance
     container_name: bot
+    restart: unless-stopped
     ports:
       - "8079:8079"
     stdin_open: true
@@ -12,6 +13,7 @@ services:
     build: ./api
     image: sirh/c2s:api
     container_name: api
+    restart: unless-stopped
     ports:
       - "3000:3000"
     stdin_open: true
