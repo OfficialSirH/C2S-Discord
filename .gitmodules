@@ -1,6 +1,0 @@
-[submodule "bot"]
-	path = bot
-	url = https://github.com/OfficialSirH/Semblance-bot.git
-[submodule "api"]
-	path = api
-	url = https://github.com/OfficialSirH/C2S-Discord-Link.git
